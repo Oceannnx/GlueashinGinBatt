@@ -131,7 +131,7 @@ function createCharacterCard(character) {
       // Include other relevant data as needed
     };
     var queryString = new URLSearchParams(data).toString();
-    var url = 'Character.html?' + queryString;
+    var url = 'character.html?' + queryString;
   
     // Navigate to the new page with the data
     window.location.href = url;
