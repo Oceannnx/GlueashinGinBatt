@@ -149,7 +149,7 @@ function displayCharacterData() {
     imageElement.classList.add('character-image');
 
     if(characterdata.name == "Ayato"){
-      imageElement.src = "pic\\Potrait\\Kamisato_ayato.png";;
+      imageElement.src = "pic\\Potrait\\Kamisato_Ayato.png";;
       imageElement.alt = characterdata.name;
 
     }
