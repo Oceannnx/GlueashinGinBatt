@@ -95,13 +95,13 @@ function createCharacterCard(character) {
     character.name = "traveler-anemo";
   }
   else if(character.name == "Traveler" && character.vision == "Dendro"){
-    character.name = "Traveler-dendro";
+    character.name = "traveler-dendro";
   }
   else if(character.name == "Traveler" && character.vision == "Electro"){
-    character.name = "Traveler-electro";
+    character.name = "traveler-electro";
   }
   else if(character.name == "Traveler" && character.vision == "Geo"){
-    character.name = "Traveler-geo";
+    character.name = "traveler-geo";
   }
   imageElement.src = "pic\\Potrait\\"+ character.name + ".png";
   imageElement.alt = character.name;  
