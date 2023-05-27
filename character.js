@@ -308,6 +308,6 @@ function displayCharacterData() {
 }
 let home_btn = document.getElementById("home-btn")
 home_btn.addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.href = "";
 })
 fetchData();
