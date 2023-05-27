@@ -154,6 +154,7 @@ function displayCharacterData() {
 
     }
     else{
+     console.log(characterdata.name).replace(" ","_")
     imageElement.src = "pic\\Potrait\\"+ (characterdata.name).replace(" ","_") + ".png";;
     imageElement.alt = characterdata.name;
   }
