@@ -38,16 +38,16 @@ else if(oldName == "Yun_Jin"){
   oldName = "yun-jin"
 }
 else if (oldName == "traveler" && vision == "Anemo"){
-  oldName = "traveler-anemo";
+  characterName = "traveler-anemo";
 }
 else if (oldName == "traveler" && vision == "Dendro"){
-  oldName = "traveler-dendro";
+  characterName = "traveler-dendro";
 }
 else if (oldName == "traveler" && vision == "Electro"){
-  oldName = "traveler-electro";
+  characterName = "traveler-electro";
 }
 else if (oldName == "traveler" && vision == "Geo"){
-  oldName = "traveler-geo";
+  characterName = "traveler-geo";
 }
 
 // let characterName = oldName.replace("_"," ")
