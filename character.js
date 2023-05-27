@@ -114,11 +114,11 @@ function displayCharacterData() {
   skilldetail.appendChild(skilldes)
   
   if (characterdata) {
-    console.log(characterdata)
     
 
     const characterNameElement = document.createElement('h2');
     characterNameElement.textContent = characterdata.name;
+    
     const characterTitleElement = document.createElement('h3');
     characterTitleElement.textContent = characterdata.title;
     
