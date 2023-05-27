@@ -75,7 +75,6 @@ async function fetchData() {
 
 
 function displayCharacterData() {
-  console.log(characterName.slice(0,8) == "traveler")
   // console.log("pic\\Potrait\\"+ (characterdata.name).replace(" ","_") + ".png");
   const characterContainer = document.getElementById('character-container');
   const characterCard = document.createElement('div');
@@ -274,9 +273,6 @@ function displayCharacterData() {
       `
     });
 
-    // if(characterdata.passiveTalents[2]){
-      
-    // }
     if(characterdata.passiveTalents[2]){
       const passiveskill3 = document.createElement("li")
       passiveskill3.textContent = "Passive skill 3  ";
@@ -310,4 +306,8 @@ function displayCharacterData() {
     characterContainer.appendChild(errorElement);
   }
 }
+let home_btn = document.getElementById("home-btn")
+home_btn.addEventListener("click", () => {
+  window.location.href = "index.html";
+})
 fetchData();

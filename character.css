@@ -16,6 +16,14 @@ body {
     bottom: 0;
     z-index: -1;
   }
+  .content{
+    font-size: large;
+    text-align: left;
+    padding:20px;
+    background-color: snow;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
 .character-container{
   display: flex;
   justify-content: center;
@@ -85,5 +93,4 @@ li{
 #character-skill{
   display: flex;
   justify-content: center;
-
 }
