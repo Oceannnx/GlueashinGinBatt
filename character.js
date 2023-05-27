@@ -37,21 +37,10 @@ else if(oldName == "Kujou_Sara"){
 else if(oldName == "Yun_Jin"){
   oldName = "yun-jin"
 }
-else if (oldName == "traveler" && vision == "Anemo"){
-  characterName = "traveler-anemo";
-}
-else if (oldName == "traveler" && vision == "Dendro"){
-  characterName = "traveler-dendro";
-}
-else if (oldName == "traveler" && vision == "Electro"){
-  characterName = "traveler-electro";
-}
-else if (oldName == "traveler" && vision == "Geo"){
-  characterName = "traveler-geo";
-}
 
 // let characterName = oldName.replace("_"," ")
 let characterName = oldName
+
 
 if(characterName == "Kamisato_Ayaka"){
   characterName = "Ayaka"
@@ -86,6 +75,7 @@ async function fetchData() {
 
 
 function displayCharacterData() {
+  console.log(characterName.slice(0,8) == "traveler")
   // console.log("pic\\Potrait\\"+ (characterdata.name).replace(" ","_") + ".png");
   const characterContainer = document.getElementById('character-container');
   const characterCard = document.createElement('div');
@@ -114,7 +104,7 @@ function displayCharacterData() {
   skilldetail.appendChild(skilldes)
   
   if (characterdata) {
-
+    
     const characterNameElement = document.createElement('h2');
     characterNameElement.textContent = characterdata.name;
     
@@ -131,7 +121,7 @@ function displayCharacterData() {
     weaponElement.innerHTML = `<strong>Weapon:</strong> ${characterdata.weapon}`;
 
     const birthday = document.createElement('p');
-    if(oldName == !"traveler"){
+    if(characterName.slice(0,8) != "traveler"){
       birthday.innerHTML = `<strong>Birthday:</strong> ${(characterdata.birthday).slice(5,10)}`;
     }
     else{
