@@ -2,7 +2,7 @@
 
 ## Project Description 
 
-The web application is showcasing character in Genshin impact information.  This project is to provide players and fans of Genshin Impact with information and to increase their understanding of the various characters appearing in the game. The app is built using HTML CSS and JavaScript.
+This web application is showcasing character in Genshin impact information.  This project is to provide players and fans of Genshin Impact with information and to increase their understanding of the various characters appearing in the game. The app is built using HTML CSS and JavaScript.
 
 ## Usage
 
