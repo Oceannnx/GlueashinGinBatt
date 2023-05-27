@@ -114,7 +114,7 @@ function displayCharacterData() {
   skilldetail.appendChild(skilldes)
   
   if (characterdata) {
-    
+    console.log(characterdata.name).replace(" ","_")
 
     const characterNameElement = document.createElement('h2');
     characterNameElement.textContent = characterdata.name;
@@ -154,7 +154,7 @@ function displayCharacterData() {
 
     }
     else{
-     console.log(characterdata.name).replace(" ","_")
+    
     imageElement.src = "pic\\Potrait\\"+ (characterdata.name).replace(" ","_") + ".png";;
     imageElement.alt = characterdata.name;
   }
