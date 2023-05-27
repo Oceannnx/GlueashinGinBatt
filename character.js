@@ -60,10 +60,10 @@ else if(characterName == "Kamisato_Ayato"){
   characterName = "Ayato"
 }
 
-// console.log(characterName)
+// 
 
 let characterdata;
-
+// console.log(characterName)
 async function getCharacterData(characterName) {
   try {
     const response = await fetch(`https://api.genshin.dev/characters/` + characterName);
@@ -114,7 +114,6 @@ function displayCharacterData() {
   skilldetail.appendChild(skilldes)
   
   if (characterdata) {
-//     console.log((characterdata.name).replace(" ","_"))
 
     const characterNameElement = document.createElement('h2');
     characterNameElement.textContent = characterdata.name;
@@ -153,10 +152,15 @@ function displayCharacterData() {
       imageElement.alt = characterdata.name;
 
     }
+    else if(characterdata.name == "Traveler"){
+      // console.log(characterdata.name)
+      imageElement.src = "pic\\Potrait\\"+ ((characterName).toLowerCase()) + ".png";
+      imageElement.alt =  (((characterName).replace(" ","_")).toLowerCase());
+    }
     else{
-    
-    imageElement.src = "pic\\Potrait\\"+ (characterdata.name).replace(" ","_") + ".png";;
-    imageElement.alt = characterdata.name;
+      // console.log(characterdata.name)
+      imageElement.src = "pic\\Potrait\\"+ (characterdata.name).replace(" ","_") + ".png";
+      imageElement.alt = characterdata.name;
   }
 
     characterCard.appendChild(imageElement);

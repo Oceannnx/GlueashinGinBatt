@@ -119,15 +119,13 @@ function createCharacterCard(character) {
   // Add click event listener
   characterCard.addEventListener('click', () => {
     // Perform the desired action when the card is clicked
-    console.log('Character card clicked:', character.name);
-    
     // Construct the URL with query parameters
     if(character.name == "Aether"){
       character.name = "traveler"
     }
     var data = {
       characterName: character.name,
-      characterVision: character.vision,
+      // characterVision: character.vision,
       // Include other relevant data as needed
     };
     var queryString = new URLSearchParams(data).toString();
