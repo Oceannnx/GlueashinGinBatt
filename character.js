@@ -134,6 +134,9 @@ function displayCharacterData() {
     if(oldName == !"traveler"){
       birthday.innerHTML = `<strong>Birthday:</strong> ${(characterdata.birthday).slice(5,10)}`;
     }
+    else{
+      birthday.innerHTML = `<strong>Birthday:</strong> Player Choise`;
+    }
 
     const nation = document.createElement('p');
     nation.innerHTML = `<strong>Nation:</strong> ${(characterdata.nation)}`;
