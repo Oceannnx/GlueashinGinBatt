@@ -1,4 +1,4 @@
-# GlueaChing GinBatt (เกลือจริง กินแบต)
+# GlueaChin GinBatt (เกลือชิน กินแบต)
 
 ## Project Description 
 
@@ -13,7 +13,7 @@ To use the web application, simply visit [https://glueashinginnbatt.vercel.app/]
 
 If you want to run the web app locally, follow these steps:
 
-1.  Clone the repository: `git clone [https://github.com/Oceannnx/GlueaShingGinBatt.git]`
+1.  Clone the repository: `git clone [https://github.com/Oceannnx/GlueashinGinBatt.git]`
 2.  Navigate to the project directory: `cd [project directory]`
 3.  Install the dependencies: `npm install`
 4.  Start the development server: `npm start`
