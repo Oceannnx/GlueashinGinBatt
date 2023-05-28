@@ -1,4 +1,4 @@
-# GlueaChing GinBatt (เกลือจริง กินแบต)
+# GlueaChin GinBatt (เกลือชิน กินแบต)
 
 ## Project Description 
 
