@@ -43,7 +43,7 @@ h2 {
 #character-list{
   width: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
